@@ -17,6 +17,7 @@ export default function an17<T>(key: string, defalt_value?: T) {
 			} else {
 				resolve(JSON.parse(res) as T);
 			}
+			client.quit();
 		});
 	});
 }
